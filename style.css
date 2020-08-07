@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./black.jpg);
+}
+
+.clock{
+    display: flex;
+}
+
+.clock div{
+    position: relative;
+    margin: 0 3px;
+    width: 250px;
+    height: 180px;
+}
+
+.clock div p{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 0);
+    z-index: 1;
+    font-size: 80px;
+    border: none;
+    box-shadow: 0px 34px 45x 0px rgba(0,0,0,0.5);
+}
+
+.clock div p:first-child{
+    border-radius: 20px 20px 0px 0px;
+}
+.clock div p:last-child{
+    font-size: 30px;
+    height: 80px;
+    background-color: rgb(206, 204, 100);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.clock div:last-child p{
+    background-color: rgb(187, 0, 187);
+    color: white;
+}
+
+.clock div:last-child p:last-child{
+    background-color: rgb(218, 92, 218);
+    color: white;
+}
+
+
+
